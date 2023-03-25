@@ -1,0 +1,55 @@
+<html>
+<head>
+
+<!-- script for adding two numbers -->
+<script>
+function add()
+{
+  var box_firstnum, box_secondnum,sum ;
+  box_firstnum = parseInt(document.getElementById("first").value);
+  box_secondnum = parseInt(document.getElementById("second").value);
+  sum = box_firstnum + box_secondnum;
+  document.getElementById("box_sumofnum").value = sum;
+}
+
+</script>
+<!-- end of add script-->
+
+
+<!-- basic style for page -->
+<style>
+  body {background-color: green;}
+ p {color : white }
+  h1 {color : red}
+  div {
+  height: 300px;
+  width: 500px;
+  background-color: black;
+</style>
+<!-- end of style -->
+</head>
+
+
+<body>
+<center>
+<br><br><br><br><br><br><br><br><br><h1>ADDITION</h1>  
+   <div><br><br><form id="wholepage">
+  
+  <p>Enter the First Number: <input id="first" type="Number" required></p>
+<p>Enter the Second Number: <input id="second" type="Number" required></p><br><br>
+<button onclick="add()">Add</button>
+<p>TOTAL:<input id="box_sumofnum" ><br><br>
+  <input type="button" onclick="clear_cmt()" value="CLEAR">
+</p>
+</form></div>
+
+<!--script for Clear comment -->
+<script> function clear_cmt() {
+  document.getElementById("wholepage").reset();
+}</script>  
+<!--end of clear command -->
+  
+
+</center>
+</body>
+</html>
